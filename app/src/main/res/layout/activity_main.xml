@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_activity"
+    android:background="@android:color/holo_green_dark"
+    tools:context=".MainActivity"
+    >
+
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.lifeislife.whiz2083.savingfragment.FragmentOne"
+        android:id="@+id/fragment"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.lifeislife.whiz2083.savingfragment.FragmentTwo"
+        android:id="@+id/fragment2"
+        android:layout_below="@+id/fragment"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
+
